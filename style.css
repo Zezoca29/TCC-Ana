@@ -1,0 +1,283 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #afafaf98;
+    color: #fff;
+    padding: 1rem 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange; /* Cor ao passar o cursor sobre os links de navegação */
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-left: 12rem;
+}
+
+.hero p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000000;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.about,
+.patrimonio,
+.contact {
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+.about h2,
+.patrimonio h2,
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 37%;
+}
+
+.social-icons {
+    text-align: center;
+    margin-left: 575px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #a6009b;
+}
+
+nav a,
+.btn,
+.social-icons a {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os logos */
+    gap: 20px; /* Espaçamento entre os logos */
+    margin-top: 20px; /* Espaçamento entre o texto e os logos */
+}
+
+.logo-container img {
+    height: 80px; /* Define a altura dos logos, ajuste conforme necessário */
+    width: auto; /* Mantém a proporção das imagens */
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1136px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+        margin-left: 5rem; /* Ajuste a margem esquerda conforme necessário */
+    }
+
+    h5 {
+        font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    .social-icons {
+        margin-left: auto; /* Ajuste a margem esquerda conforme necessário */
+        margin-right: auto; /* Adiciona margem automática para centralizar */
+        text-align: center;
+    }
+
+    footer {
+        margin-left: 32%; /* Remove a margem esquerda para alinhar melhor */
+    }
+}
+
+@media (max-width: 800px) {
+    .logo img { 
+        height: 30px; /* Ajuste a altura para tamanhos menores */
+    }
+
+    .hero h1 {
+        font-size: 0.8rem; /* Ajuste o tamanho da fonte para dispositivos menores */
+        margin-left: 2.6rem; /* Ajuste a margem esquerda */
+    }
+
+    h5 {
+        font-size: 0.5rem; /* Ajuste o tamanho da fonte para dispositivos menores */
+    }
+
+    .logo-container img {
+        height: 25px; /* Ajuste a altura dos logos */
+        width: auto; /* Mantém a proporção das imagens */
+    }
+
+    h2 {
+        font-size: 0.8rem; /* Ajuste o tamanho da fonte para dispositivos menores */
+    }
+
+    footer {
+        margin-left: 5%; /* Reduza a margem esquerda para melhor alinhamento */
+    }
+
+    nav ul li a {
+        color: #ffffff; /* Cor do texto dos links */
+        text-decoration: none; /* Remove o sublinhado dos links */
+        font-size: 0.6rem; /* Ajusta o tamanho da fonte dos links */
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 1rem;
+        display: flex;
+    }
+
+    .item img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .item h3 {
+        font-size: .5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h4 {
+        font-size: .2rem;
+    }
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        font-size: .3rem;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
